@@ -1,0 +1,65 @@
+.login-container {
+	background: white;
+  height: 100vh;
+  width: auto;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container img {
+	margin-bottom: 25px;
+}
+
+.login-container div {
+  color: #666667;
+  width: 100%;
+	text-align: center
+}
+
+.brand-naming {
+  font-family: PTSans-Caption;
+  font-size: 20px;
+}
+
+.login-input {
+  height: 30px;
+	width: 100%;
+}
+
+#InputEmail, #InputPassword {	
+	margin-bottom: 7px;
+}
+
+input.login-input {
+	background-color: #fafafa;
+	border-radius: 2.5px;
+	border: solid 0.5px #c6c6c6;
+}
+
+button.login-input {
+  background-color: #0faaa2;
+  opacity: 0.46;
+  border-radius: 2.5px;
+  border: solid 0.5px #0faaa2;
+  margin-bottom: 44px;
+}
+
+.login-button-text {
+  font-family: PTSans-Caption;
+  height: 14px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+}
+
+.apply-for {
+  font-family: PTSans-Caption;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+}
+
+.apply-for .brand-access {
+  color: #18998f;
+}
