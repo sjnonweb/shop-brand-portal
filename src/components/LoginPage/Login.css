@@ -44,7 +44,6 @@ button.login-input {
   opacity: 0.46;
   border-radius: 2.5px;
   border: solid 0.5px #0faaa2;
-  margin-bottom: 44px;
 }
 
 .login-button-text {
@@ -58,6 +57,7 @@ button.login-input {
   font-family: PTSans-Caption;
   font-size: 12px;
   letter-spacing: 0.1px;
+   margin-top: 44px;
 }
 
 .apply-for .brand-access {
