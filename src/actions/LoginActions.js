@@ -17,7 +17,7 @@ export function LoginStart(email, password) {
 		})
 			.then((response) => {
 				console.log(response);
-				dispatch(LoginSuccessful(response.data))
+				dispatch(LoginSuccessful(response.data));
 			})
 			.catch((err) => {
 				console.log('Error', err);
@@ -33,4 +33,8 @@ const LoginSuccessful = (data) => ({
 
 const LoginUnsuccessful = () => ({
 	type: 'LOGIN_UNSUCCESSFUL'
+})
+
+export const Logout = () => ({
+	type: 'LOGOUT'
 })

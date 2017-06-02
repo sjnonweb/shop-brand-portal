@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { LoginStart } from '../../actions/LoginActions'
-
+import { Redirect } from 'react-router-dom';
 
 import './Login.css';
 
@@ -35,10 +35,18 @@ class Login extends Component {
 	
 
 	render() {
-
+		
 		const error = (
 			<p className="text-warning">Invalid username or password</p>
 		)
+		
+		if(this.props.status === 200) {
+			return (
+				<Redirect to="/" />
+			)
+		}
+
+		else {
 
 		return (
 			<div className="container-fluid">
@@ -63,6 +71,7 @@ class Login extends Component {
 				</div>
 			</div>
 		)
+	}
 	}
 }
 
